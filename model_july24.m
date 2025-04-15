@@ -1,4 +1,4 @@
-%%Model using Koeglnik cwvt/Bragg diffraction/thick film assumption
+%%Model using Kogelnik cwvt/Bragg diffraction/thick film assumption
 % rotation angle model
 
 lambda=0.350:0.001:0.750; %everything in micrometers
@@ -163,6 +163,8 @@ d2=0.907-0.322;
 dphi1=2*pi./lambda.*d1.*(n_lambda-1);
 dphi2=2*pi./lambda.*d2.*(n_lambda-1);
 
+% different orders
+
 m=0;
 eta1_0=1-(2.*D1)+(2.*D1.^2)+(2.*D1.*(1-D1).*cos(dphi1));
 eta2_0=1-(2.*D2)+(2.*D2.^2)+(2.*D2.*(1-D2).*cos(dphi2));
@@ -220,6 +222,8 @@ d2=d2-d1;
 
 dphi1=2*pi./lambda.*d1.*(n_lambda-1);
 dphi2=2*pi./lambda.*d2.*(n_lambda-1);
+
+% different orders
 
 m=0;
 eta1_0=1-(2.*D1)+(2.*D1.^2)+(2.*D1.*(1-D1).*cos(dphi1));
@@ -281,6 +285,9 @@ dphi1=2*pi./lambda.*d1.*(n_lambda-1);
 dphi2=2*pi./lambda.*d2.*(n_lambda-1);
 
 %0 deg
+
+% different orders
+
 m=0;
 theta1=asin(-m.*lambda/gp);
 eta1_0=1-(2.*D1)+(2.*D1.^2)+(2.*D1.*(1-D1).*cos(dphi1));
