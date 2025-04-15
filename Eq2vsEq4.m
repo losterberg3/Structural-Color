@@ -1,4 +1,8 @@
-%% Integral with scalar theory
+% The code below compares the integral from equation 2 of the paper with
+% the analytical expression of equation 4 of the paper and generates Figure
+% 1a of the paper
+
+% Fraunhofer integral with scalar theory (equation 2)
 
 gp=1.1;
 w=0.1;
@@ -28,6 +32,8 @@ for lambda=20:35
     eta2(lambda-19)=q*conj(q);
 end
 
+% Fraunhofer analytical expression
+
 lambda=0.400:0.001:0.700;
 
 A=1.52266;
@@ -51,6 +57,7 @@ eta2_0=1-(2.*D2)+(2.*D2.^2)+(2.*D2.*(1-D2).*cos(dphi2));
 m=3;
 eta1_m=4/pi^2/m^2.*(sin(pi.*m.*D1).^2).*(sin(dphi1./2).^2);
 eta2_m=4/pi^2/m^2.*(sin(pi.*m.*D2).^2).*(sin(dphi2./2).^2);
+
 %% 
 
 figure
