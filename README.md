@@ -1,4 +1,5 @@
 # Structural Color 
+Poulikakos Lab - Nanophotonics for Global Health @ UCSD
 
 The following code is for the diffraction models used in the paper "3D-architected gratings for polarization-sensitive, nature-inspired structural color" by Moisés H. Ibarra Miranda, Lars W. Osterberg, Dev H. Shah, Kartik Regulagadda and Lisa V. Poulikakos.
 
